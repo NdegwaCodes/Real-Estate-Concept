@@ -1,0 +1,672 @@
+<div class="mt-[80px] lg:mt-[120px] xl:mt-[-160px] relative z-[2] pl-[40px] lg:pl-[50px] xl:pl-[0px]">
+    <div class="container">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12 relative">
+                <ul
+                    class="tab-nav search-tab inline-flex px-[15px] sm:px-[30px] py-[22px] border-l border-t border-r border-solid border-[#016450] border-opacity-25 rounded-tl-[15px] rounded-tr-[15px] bg-white">
+                    <li data-tab="buy" class="mr-[5px] sm:mr-[10px] md:mr-[46px] my-1 active"><button
+                            class="font-lora leading-none px-[5px] sm:px-[10px] capitalize text-primary transition-all text-base xl:text-[22px] before:absolute before:left-auto before:right-0 before:bottom-[-32px] before:w-0 before:h-[2px] before:content-[''] before:bg-secondary relative before:transition-all ease-out">buy</button>
+                    </li>
+                    <li data-tab="sell" class="mr-[5px] sm:mr-[10px] md:mr-[46px] my-1"><button
+                            class="font-lora leading-none px-[5px] sm:px-[10px] capitalize text-primary transition-all text-base xl:text-[22px] before:absolute before:left-auto before:right-0 before:bottom-[-32px] before:w-0 before:h-[2px] before:content-[''] before:bg-secondary relative before:transition-all ease-out">sell</button>
+                    </li>
+                    <li data-tab="rent" class="mr-[5px] sm:mr-[10px] md:mr-[46px] my-1"><button
+                            class="font-lora leading-none px-[5px] sm:px-[10px] capitalize text-primary transition-all text-base xl:text-[22px] before:absolute before:left-auto before:right-0 before:bottom-[-32px] before:w-0 before:h-[2px] before:content-[''] before:bg-secondary relative before:transition-all ease-out">rent</button>
+                    </li>
+                    <li data-tab="co-living" class="md:mr-[0px] my-1"><button
+                            class="font-lora leading-none px-[5px] sm:px-[10px] capitalize text-primary transition-all text-base xl:text-[22px] before:absolute before:left-auto before:right-0 before:bottom-[-32px] before:w-0 before:h-[2px] before:content-[''] before:bg-secondary relative before:transition-all ease-out">Co-living</button>
+                    </li>
+                </ul>
+
+                <button
+                    class="tab-toggle-btn px-[10px] py-[15px] absolute bottom-[-56px] left-[-45px] border-l border-t border-b border-solid border-[#016450] bg-white text-primary border-opacity-25 rounded-tl-[10px] rounded-bl-[10px]"
+                    aria-label="svg icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 22V11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M19 7V2" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 22V17" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 13V2" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 22V11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 7V2" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3 11H7" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17 11H21" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10 13H14" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="col-span-12 selectricc-border-none">
+                <div id="buy"
+                    class="tab-content bg-white border border-solid border-[#016450] border-opacity-25 rounded-bl-[15px] rounded-br-[15px] rounded-tr-[15px] px-[15px] sm:px-[30px] py-[40px] active">
+                    <form action="#">
+                        <div class="advanced-searrch flex flex-wrap items-center -mb-[45px]">
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="location"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Location</label>
+                                    <input id="location" type="text" placeholder="Choose location"
+                                        class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="property"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Property
+                                        Type</label>
+                                    <select name="property" id="property"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Duplex House</option>
+                                        <option value="1">Duplex House 1</option>
+                                        <option value="2">Duplex House 2</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                        alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="price"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Price
+                                        Range</label>
+                                    <select name="price" id="price"
+                                        class="nice-select appearance-none bg-transparent text-body text-tiny font-light cursor-pointer">
+                                        <option selected value="0">1500 USD</option>
+                                        <option value="1">1600 USD</option>
+                                        <option value="2">1700 USD</option>
+                                        <option value="3">1800 USD</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
+
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/area.svg" width="24" height="24" alt="svg icon">
+                                </div>
+
+                                <div class="flex-1">
+                                    <label for="property-size"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Property
+                                        Size</label>
+                                    <select name="property-size" id="property-size"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">2500 Sqft</option>
+                                        <option value="1">2600 Sqft</option>
+                                        <option value="2">2700 Sqft</option>
+                                        <option value="3">2800 Sqft</option>
+                                    </select>
+                                </div>
+                                <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
+                                    <img src="assets/images/icon/search-outline.svg" class="max-w-[30px] xl:w-auto"
+                                        width="40" height="40" alt="svg icon">
+                                    <span class="hidden">Search Properties</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="bedrooms10"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Bedrooms</label>
+                                    <select name="property" id="bedrooms10"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Bedrooms</option>
+                                        <option value="1">kitchen</option>
+                                        <option value="2">dinning rooms</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="property9"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Bathrooms</label>
+                                    <select name="property" id="property9"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Duplex House</option>
+                                        <option value="1">Duplex House 1</option>
+                                        <option value="2">Duplex House 2</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                        alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="garage"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Garage</label>
+                                    <select name="garage" id="garage"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">2 Garage</option>
+                                        <option value="1">2 Garage</option>
+                                        <option value="2">3 Garage</option>
+                                        <option value="3">4 Garage</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <button class="search-properties-btn">
+                                    Search Properties
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+                <div id="sell"
+                    class="tab-content bg-white border border-solid border-[#016450] border-opacity-25 rounded-bl-[15px] rounded-br-[15px] rounded-tr-[15px] px-[15px] sm:px-[30px] py-[40px]">
+                    <form action="#">
+                        <div class="advanced-searrch flex flex-wrap items-center -mb-[45px]">
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="location2"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Location</label>
+                                    <input id="location2" type="text" placeholder="Choose location"
+                                        class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="property2"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Property
+                                        Type</label>
+                                    <select name="property" id="property2"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Apartments</option>
+                                        <option value="1">Duplex House 1</option>
+                                        <option value="2">Duplex House 2</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                        alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="price2"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Price
+                                        Range</label>
+                                    <select name="price" id="price2"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">100 USD</option>
+                                        <option value="1">600 USD</option>
+                                        <option value="2">700 USD</option>
+                                        <option value="3">800 USD</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
+
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/area.svg" width="24" height="24" alt="svg icon">
+                                </div>
+
+                                <div class="flex-1">
+                                    <label for="property-size2"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Property
+                                        Size</label>
+                                    <select name="property-size" id="property-size2"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">500 Sqft</option>
+                                        <option value="1">600 Sqft</option>
+                                        <option value="2">700 Sqft</option>
+                                        <option value="3">800 Sqft</option>
+                                    </select>
+                                </div>
+                                <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
+                                    <img src="assets/images/icon/search-outline.svg" class="max-w-[30px] xl:w-auto"
+                                        width="40" height="40" alt="svg icon">
+                                    <span class="hidden">Search Properties</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="bedrooms"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Bedrooms</label>
+                                    <select name="property" id="bedrooms"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Bedrooms</option>
+                                        <option value="1">kitchen</option>
+                                        <option value="2">dinning rooms</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="property3"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Bathrooms</label>
+                                    <select name="property" id="property3"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Duplex House</option>
+                                        <option value="1">Duplex House 1</option>
+                                        <option value="2">Duplex House 2</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                        alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="garage2"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Garage</label>
+                                    <select name="garage" id="garage2"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">2 Garage</option>
+                                        <option value="1">2 Garage</option>
+                                        <option value="2">3 Garage</option>
+                                        <option value="3">4 Garage</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <button class="search-properties-btn">
+                                    Search Properties
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+                <div id="rent"
+                    class="tab-content bg-white border border-solid border-[#016450] border-opacity-25 rounded-bl-[15px] rounded-br-[15px] rounded-tr-[15px] px-[15px] sm:px-[30px] py-[40px]">
+                    <form action="#">
+                        <div class="advanced-searrch flex flex-wrap items-center -mb-[45px]">
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="location7"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Location</label>
+                                    <input id="location7" type="text" placeholder="Choose location"
+                                        class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="property8"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Property
+                                        Type</label>
+                                    <select name="property" id="property8"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Duplex House</option>
+                                        <option value="1">Duplex House 1</option>
+                                        <option value="2">Duplex House 2</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                        alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="price7"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Price
+                                        Range</label>
+                                    <select name="price" id="price7"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">1500 USD</option>
+                                        <option value="1">1600 USD</option>
+                                        <option value="2">1700 USD</option>
+                                        <option value="3">1800 USD</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
+
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/area.svg" width="24" height="24" alt="svg icon">
+                                </div>
+
+                                <div class="flex-1">
+                                    <label for="property-size9"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Property
+                                        Size</label>
+                                    <select name="property-size" id="property-size9"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">2500 Sqft</option>
+                                        <option value="1">2600 Sqft</option>
+                                        <option value="2">2700 Sqft</option>
+                                        <option value="3">2800 Sqft</option>
+                                    </select>
+                                </div>
+                                <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
+                                    <img src="assets/images/icon/search-outline.svg" class="max-w-[30px] xl:w-auto"
+                                        width="40" height="40" alt="svg icon">
+                                    <span class="hidden">Search Properties</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="bedrooms6"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Bedrooms</label>
+                                    <select name="property" id="bedrooms6"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Bedrooms</option>
+                                        <option value="1">kitchen</option>
+                                        <option value="2">dinning rooms</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="property7"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Bathrooms</label>
+                                    <select name="property" id="property7"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Duplex House</option>
+                                        <option value="1">Duplex House 1</option>
+                                        <option value="2">Duplex House 2</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                        alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="garage20"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Garage</label>
+                                    <select name="garage" id="garage20"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">2 Garage</option>
+                                        <option value="1">2 Garage</option>
+                                        <option value="2">3 Garage</option>
+                                        <option value="3">4 Garage</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <button class="search-properties-btn">
+                                    Search Properties
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+                <div id="co-living"
+                    class="tab-content bg-white border border-solid border-[#016450] border-opacity-25 rounded-bl-[15px] rounded-br-[15px] rounded-tr-[15px] px-[15px] sm:px-[30px] py-[40px]">
+                    <form action="#">
+                        <div class="advanced-searrch flex flex-wrap items-center -mb-[45px]">
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="location6"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Location</label>
+                                    <input id="location6" type="text" placeholder="Choose location"
+                                        class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full">
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="property6"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Property
+                                        Type</label>
+                                    <select name="property" id="property6"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Apartments</option>
+                                        <option value="1">Duplex House 1</option>
+                                        <option value="2">Duplex House 2</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                        alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="price6"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Price
+                                        Range</label>
+                                    <select name="price" id="price6"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">5500 USD</option>
+                                        <option value="1">5600 USD</option>
+                                        <option value="2">5700 USD</option>
+                                        <option value="3">5800 USD</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
+
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/area.svg" width="24" height="24" alt="svg icon">
+                                </div>
+
+                                <div class="flex-1">
+                                    <label for="property-size4"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Property
+                                        Size</label>
+                                    <select name="property-size" id="property-size4"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">3500 Sqft</option>
+                                        <option value="1">3600 Sqft</option>
+                                        <option value="2">3700 Sqft</option>
+                                        <option value="3">3800 Sqft</option>
+                                    </select>
+                                </div>
+                                <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
+                                    <img src="assets/images/icon/search-outline.svg" class="max-w-[30px] xl:w-auto"
+                                        width="40" height="40" alt="svg icon">
+                                    <span class="hidden">Search Properties</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/location.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="bedrooms4"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Bedrooms</label>
+                                    <select name="property" id="bedrooms4"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Bedrooms</option>
+                                        <option value="1">kitchen</option>
+                                        <option value="2">dinning rooms</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div
+                                class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/property.svg" width="24" height="24" alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="property4"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Bathrooms</label>
+                                    <select name="property" id="property4"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">Duplex House</option>
+                                        <option value="1">Duplex House 1</option>
+                                        <option value="2">Duplex House 2</option>
+                                        <option value="3">Duplex House 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <div class="mr-4 self-start shrink-0">
+                                    <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                        alt="svg icon">
+                                </div>
+                                <div class="flex-1">
+                                    <label for="garage4"
+                                        class="font-lora block capitalize text-primary text-[17px] xl:text-[24px] leading-none mb-1">Garage</label>
+                                    <select name="garage" id="garage4"
+                                        class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                        <option selected value="0">2 Garage</option>
+                                        <option value="1">2 Garage</option>
+                                        <option value="2">3 Garage</option>
+                                        <option value="3">4 Garage</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="advanced-searrch-list flex items-center lg:border-r lg:border-[#D6D4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                <button class="search-properties-btn">
+                                    Search Properties
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
