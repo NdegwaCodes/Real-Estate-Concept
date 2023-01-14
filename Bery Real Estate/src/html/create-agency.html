@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+@@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
+
+<body class="font-karla text-body text-tiny">
+    <div class="overflow-hidden">
+
+        <!-- header top start -->
+        <div class="bg-primary font-lora text-white py-[11px]">
+            @@include('header/topbar.html')
+        </div>
+        <!-- header top end -->
+
+        <!-- Header start -->
+        <header id="sticky-header" class="relative bg-[#E9F1FF] lg:py-[20px] z-10 secondary-sticky secondary-sticky">
+            @@include('header/header-one.html')
+        </header>
+        @@include('offcanvas/index.html')
+        <!-- Header end -->
+
+        <!-- Hero section start -->
+        <section
+            class="bg-no-repeat bg-center bg-cover bg-[#E9F1FF] h-[350px] lg:h-[513px] flex flex-wrap items-center relative before:absolute before:inset-0 before:content-[''] before:bg-[#000000] before:opacity-[70%]"
+            style="background-image: url('assets/images/breadcrumb/bg-1.png');">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="max-w-[700px]  mx-auto text-center text-white relative z-[1]">
+                            <div class="mb-5"><span class="text-base block">Agency Create</span></div>
+                            <h1
+                                class="font-lora text-[32px] sm:text-[50px] md:text-[68px] lg:text-[50px] leading-tight xl:text-2xl font-medium">
+                                Create Agency
+                            </h1>
+
+                            <p class="text-base mt-5 max-w-[500px] mx-auto text-center">
+                                Huge number of propreties availabe here for buy and sell
+                                also you can find here co-living property as you like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- create agency Etart-->
+        <div class="pt-[80px] lg:pt-[120px]">
+            <div class="container">
+                <form action="#" class="grid grid-cols-12 gap-x-[20px] gap-y-[30px]">
+
+                    <div class="col-span-12">
+                        <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="text" placeholder="Agency Title">
+                    </div>
+                
+                    
+                   <div class="col-span-12">
+                    <textarea class="h-[196px] xl:h-[485px] font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] resize-none" name="textarea" id="textarea" cols="30" rows="10" placeholder="Description"></textarea>
+                   </div>
+                
+                   <div class="col-span-12">
+                    <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="text" placeholder="Address line 1">
+                   </div>
+                
+                   <div class="col-span-12">
+                    <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="text" placeholder="Address line 2">
+                   </div>
+                
+                   <div class="col-span-12 md:col-span-6">
+                    <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="text" placeholder="City">
+                   </div>
+                   <div class="col-span-12 md:col-span-6">
+                    <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="text" placeholder="Zip code">
+                   </div>
+                   <div class="col-span-12 md:col-span-6">
+                    <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="text" placeholder="Phone">
+                   </div>
+                   <div class="col-span-12 md:col-span-6">
+                    <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="email" placeholder="Email">
+                   </div>
+                   <div class="col-span-12 md:col-span-6">
+                    <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="text" placeholder="Number of Agent">
+                   </div>
+                   <div class="col-span-12 md:col-span-6">
+                    <input class="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-[#1B2D40] border-opacity-60 rounded-[8px] p-[15px] focus:border-secondary focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] " type="text" placeholder="Website">
+                   </div>
+                
+                  <div class="col-span-12">
+                    <button type="submit" class="before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[30px] py-[15px] capitalize font-medium text-white text-[14px] xl:text-[16px] relative after:block after:absolute after:inset-0 after:-z-[2] after:bg-primary after:rounded-md after:transition-all">create agency</button>
+                  </div>
+                
+                </form>
+            </div>
+        </div>
+        <!-- create agency End-->
+
+        <section class="py-[80px] lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="mb-[40px] text-center">
+                            <span class="text-secondary text-tiny inline-block mb-2">Packages</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">
+                                Select Your Package<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-span-12">
+                        <div class="switch-button text-center relative">
+                            <input type="checkbox" name="switch-button" id="switch-label"
+                                class="switch-button__checkbox">
+                                <span class="monthly inline-block translate-y-[-10px] px-[10px] text-secondary">Monthly</span>
+                            <label for="switch-label" class="switch-button__label"></label>
+                               <span class="yearly inline-block translate-y-[-10px] px-[10px]">Yearly</span>
+                            <!-- monthly plan start -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] text-left mt-[60px] monthly-plan">
+
+                                <div class="bg-[#E9F1FF] rounded-[10px] p-[20px] lg:p-[40px]">
+                                    <span class="font-lora text-[18px] leading-none text-primary block">Basic</span>
+                                    <h3 class="font-bold text-secondary text-[36px] leading-none mb-[15px] mt-[10px]">$35 <small
+                                            class="font-normal text-[16px]">/month</small></h3>
+                                    <p class="pb-[25px]">Huge number of propreties availabe
+                                        for buy, sell and Rent you find</p>
+                                    <ul class="mb-[30px] border-t border-[#E0E0E0] pt-[25px]">
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Property Submit - 05</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Agency Profile - 02</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Agent Profile - 01</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Featured Properties - 01</li>
+                                    </ul>
+                                    <button type="submit"
+                                        class="relative z-[1] before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[50px] py-[15px] capitalize font-medium text-white text-[14px] xl:text-[16px] after:block after:absolute after:inset-0 after:-z-[2] after:bg-primary after:rounded-md after:transition-all">Get
+                                        Started</button>
+                                </div>
+            
+            
+                                <div class="bg-[#0B2C3D] rounded-[10px] p-[20px] lg:p-[40px]">
+                                    <span class="font-lora text-[18px] leading-none text-white block">Standard</span>
+                                    <h3 class="font-bold text-white text-[36px] leading-none mb-[15px] mt-[10px]">$60 <small
+                                            class="font-normal text-[16px]">/month</small></h3>
+                                    <p class="pb-[25px] text-white">Huge number of propreties availabe
+                                        for buy, sell and Rent you find</p>
+                                    <ul class="mb-[30px] border-t border-[#E0E0E0] pt-[25px]">
+                                        <li class="flex flex-wrap items-center text-[14px] text-white mb-[10px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            Property Submit - 15</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-white mb-[10px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            Agency Profile - 05</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-white mb-[10px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            Agent Profile - 05</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-white mb-[10px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            Featured Properties - 06</li>
+                                    </ul>
+                                    <button type="submit"
+                                        class="relative z-[1] before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[50px] py-[15px] capitalize font-medium text-primary hover:text-white text-[14px] xl:text-[16px] after:block after:absolute after:inset-0 after:-z-[2] after:bg-white after:rounded-md after:transition-all">Get
+                                        Started</button>
+                                </div>
+            
+                                <div class="bg-[#E9F1FF] rounded-[10px] p-[20px] lg:p-[40px]">
+                                    <span class="font-lora text-[18px] leading-none text-primary block">Premium</span>
+                                    <h3 class="font-bold text-secondary text-[36px] leading-none mb-[15px] mt-[10px]">$85 <small
+                                            class="font-normal text-[16px]">/month</small></h3>
+                                    <p class="pb-[25px]">Huge number of propreties availabe
+                                        for buy, sell and Rent you find</p>
+                                    <ul class="mb-[30px] border-t border-[#E0E0E0] pt-[25px]">
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Property Submit - 50</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Agency Profile - 10</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Agent Profile - 15</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Featured Properties - 10</li>
+                                    </ul>
+                                    <button type="submit"
+                                        class="relative z-[1] before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[50px] py-[15px] capitalize font-medium text-white text-[14px] xl:text-[16px] after:block after:absolute after:inset-0 after:-z-[2] after:bg-primary after:rounded-md after:transition-all">Get
+                                        Started</button>
+                                </div>
+            
+                            </div>
+                               <!-- monthly plan end -->
+
+                               <div class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] text-left mt-[60px] yearly-plan">
+
+                                <div class="bg-[#E9F1FF] rounded-[10px] p-[20px] lg:p-[40px]">
+                                    <span class="font-lora text-[18px] leading-none text-primary block">Basic</span>
+                                    <h3 class="font-bold text-secondary text-[36px] leading-none mb-[15px] mt-[10px]">$235 <small
+                                            class="font-normal text-[16px]">/yearly</small></h3>
+                                    <p class="pb-[25px]">Huge number of propreties availabe
+                                        for buy, sell and Rent you find</p>
+                                    <ul class="mb-[30px] border-t border-[#E0E0E0] pt-[25px]">
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Property Submit - 05</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Agency Profile - 02</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Agent Profile - 01</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Featured Properties - 01</li>
+                                    </ul>
+                                    <button type="submit"
+                                        class="relative z-[1] before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[50px] py-[15px] capitalize font-medium text-white text-[14px] xl:text-[16px] after:block after:absolute after:inset-0 after:-z-[2] after:bg-primary after:rounded-md after:transition-all">Get
+                                        Started</button>
+                                </div>
+            
+            
+                                <div class="bg-[#0B2C3D] rounded-[10px] p-[20px] lg:p-[40px]">
+                                    <span class="font-lora text-[18px] leading-none text-white block">Standard</span>
+                                    <h3 class="font-bold text-white text-[36px] leading-none mb-[15px] mt-[10px]">$160 <small
+                                            class="font-normal text-[16px]">/yearly</small></h3>
+                                    <p class="pb-[25px] text-white">Huge number of propreties availabe
+                                        for buy, sell and Rent you find</p>
+                                    <ul class="mb-[30px] border-t border-[#E0E0E0] pt-[25px]">
+                                        <li class="flex flex-wrap items-center text-[14px] text-white mb-[10px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            Property Submit - 15</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-white mb-[10px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            Agency Profile - 05</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-white mb-[10px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            Agent Profile - 05</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-white mb-[10px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            Featured Properties - 06</li>
+                                    </ul>
+                                    <button type="submit"
+                                        class="relative z-[1] before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[50px] py-[15px] capitalize font-medium text-primary hover:text-white text-[14px] xl:text-[16px] after:block after:absolute after:inset-0 after:-z-[2] after:bg-white after:rounded-md after:transition-all">Get
+                                        Started</button>
+                                </div>
+            
+                                <div class="bg-[#E9F1FF] rounded-[10px] p-[20px] lg:p-[40px]">
+                                    <span class="font-lora text-[18px] leading-none text-primary block">Premium</span>
+                                    <h3 class="font-bold text-secondary text-[36px] leading-none mb-[15px] mt-[10px]">$320 <small
+                                            class="font-normal text-[16px]">/yearly</small></h3>
+                                    <p class="pb-[25px]">Huge number of propreties availabe
+                                        for buy, sell and Rent you find</p>
+                                    <ul class="mb-[30px] border-t border-[#E0E0E0] pt-[25px]">
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Property Submit - 50</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Agency Profile - 10</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Agent Profile - 15</li>
+                                        <li class="flex flex-wrap items-center text-[14px] text-primary mb-[15px]">
+                                            <span class="mr-[10px]">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.06392 13.6534C4.63037 13.6534 4.21699 13.4642 3.93313 13.133L0.358478 8.96352C-0.176672 8.33917 -0.104543 7.39917 0.520575 6.86324C1.14492 6.32732 2.08492 6.39945 2.62085 7.02457L4.95767 9.75073L12.3427 0.845519C13.4859 -0.756054 14.6827 0.13121 13.534 1.73899L6.27616 13.0299C6.01013 13.4022 5.58744 13.6317 5.12985 13.6519C5.10736 13.6527 5.08564 13.6534 5.06392 13.6534Z"
+                                                        fill="#0B2C3D" />
+                                                </svg>
+                                            </span>
+                                            Featured Properties - 10</li>
+                                    </ul>
+                                    <button type="submit"
+                                        class="relative z-[1] before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[50px] py-[15px] capitalize font-medium text-white text-[14px] xl:text-[16px] after:block after:absolute after:inset-0 after:-z-[2] after:bg-primary after:rounded-md after:transition-all">Get
+                                        Started</button>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- News Letter section start -->
+        <section class="py-[80px] lg:p-[90px] bg-primary relative">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="col-span">
+                        @@include('news-letter/index-2.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Letter section End -->
+
+        <!-- Footer Start -->
+        <footer class="footer bg-[#EEEEEE] pt-[80px] lg:pt-[120px] pb-30 md:pb-[80px] lg:pb-[110px] font-normal bg-no-repeat"
+            style="background-image: url('assets/images/footer/pattern.png');">
+            <div class="container">
+                @@include('footer/index.html')
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <a id="scrollUp" class="w-12 h-12 rounded-full bg-primary text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up">
+
+            <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"/></svg>
+
+        </a>
+    </div>
+
+
+    @@include('scripts.html', {"page": "home", "plugins":
+    ["swiper-bundle.min","popper.min","jquery.magnific-popup.min","jquery.ajaxchimp.min","parallax.min","jquery.waypoints","jquery.counterup.min"]})
+
+</body>
+
+</html>

@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+@@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup","nice-select"]})
+
+<body class="font-karla text-body text-tiny">
+    <div class="overflow-hidden">
+        <!-- Header start -->
+
+        <div class="min-h-[100px]">
+            <header id="sticky-header" class="relative bg-[#E8F1FF] lg:py-[30px] z-[25] secondary-sticky">
+                @@include('header/header-one.html')
+            </header>
+        </div>
+        @@include('offcanvas/index.html')
+        <!-- Header end -->
+
+        <div class="relative">
+
+            <!-- Hero section start -->
+
+            @@include('hero/index-3.html')
+            <!-- Hero section end -->
+
+            <!-- Addvanced search tab start -->
+
+            <div class="container mt-[80px] md:mt-[120px] lg:mt-[0px] z-[2] pl-[60px] lg:pl-[50px] 2xl::pl-[0px] lg:absolute lg:left-0 lg:right-0 lg:top-[100%] lg:translate-y-[-396px]">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="relative text-center">
+                            <ul
+                                class="tab-nav search-tab inline-flex px-[15px] sm:px-[30px] py-[22px] border-t border-l border-r border-solid border-[#016450] rounded-tl-[15px] rounded-tr-[15px] bg-[rgb(232,241,255,0.9)]">
+                                <li data-tab="buy" class="mr-[5px] sm:mr-[10px] md:mr-[46px] my-1 active"><button class="font-lora leading-none px-[5px] sm:px-[10px] capitalize text-primary transition-all text-base xl:text-[22px] before:absolute before:left-auto before:right-0 before:bottom-[-34px] before:z-10 before:rounded-full before:w-0 before:h-[3px] before:content-[''] before:bg-secondary relative before:transition-all ease-out">buy</button>
+                                </li>
+                                <li data-tab="sell" class="mr-[5px] sm:mr-[10px] md:mr-[46px] my-1"><button class="font-lora leading-none px-[5px] sm:px-[10px] capitalize text-primary transition-all text-base xl:text-[22px] before:absolute before:left-auto before:right-0 before:bottom-[-34px] before:z-10 before:rounded-full before:w-0 before:h-[3px] before:content-[''] before:bg-secondary relative before:transition-all ease-out">sell</button>
+                                </li>
+                                <li data-tab="rent" class="mr-[5px] sm:mr-[10px] md:mr-[46px] my-1"><button class="font-lora leading-none px-[5px] sm:px-[10px] capitalize text-primary transition-all text-base xl:text-[22px] before:absolute before:left-auto before:right-0 before:bottom-[-34px] before:z-10 before:rounded-full before:w-0 before:h-[3px] before:content-[''] before:bg-secondary relative before:transition-all ease-out">rent</button>
+                                </li>
+                                <li data-tab="co-living" class="md:mr-[0px] my-1"><button class="font-lora leading-none px-[5px] sm:px-[10px] capitalize text-primary transition-all text-base xl:text-[22px] before:absolute before:left-auto before:right-0 before:bottom-[-34px] before:z-10 before:rounded-full before:w-0 before:h-[3px] before:content-[''] before:bg-secondary relative before:transition-all ease-out">Co-living</button>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="relative selectricc-border-none">
+
+                            <button class="tab-toggle-btn px-[10px] py-[15px] absolute top-[0px] left-[-45px] border-l border-t border-b border-solid border-[#fff] bg-[rgb(232,241,255,0.98)] text-primary rounded-tl-[10px] rounded-bl-[10px]" aria-label="svg icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 22V11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19 7V2" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 22V17" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 13V2" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5 22V11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5 7V2" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3 11H7" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17 11H21" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13H14" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+
+                            <div id="buy" class="tab-content bg-[rgb(232,241,255,0.9)] border-t border-solid border-[#fff] rounded-bl-[15px] rounded-br-[15px] rounded-tr-[15px] px-[15px] sm:px-[30px] py-[40px] active">
+                                <form action="#">
+                                    <div class="advanced-searrch flex flex-wrap -mb-[45px]">
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/location.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="location"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Location</label>
+                                                <input id="location" type="text" placeholder="Choose location"
+                                                    class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full bg-transparent">
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/property.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="property"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Property
+                                                    Type</label>
+                                                <select name="property" id="property"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Apartments</option>
+                                                    <option value="1">Duplex House 1</option>
+                                                    <option value="2">Duplex House 2</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="price"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Price
+                                                    Range</label>
+                                                <select name="price" id="price"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">3500 USD</option>
+                                                    <option value="1">3600 USD</option>
+                                                    <option value="2">3700 USD</option>
+                                                    <option value="3">3800 USD</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
+
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/area.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+
+                                            <div class="flex-1">
+                                                <label for="property-size"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Property
+                                                    Size</label>
+                                                <select name="property-size" id="property-size"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">1500 Sqft</option>
+                                                    <option value="1">1600 Sqft</option>
+                                                    <option value="2">1700 Sqft</option>
+                                                    <option value="3">1800 Sqft</option>
+                                                </select>
+                                            </div>
+                                            <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
+                                                <img src="assets/images/icon/search-outline.svg"
+                                                    class="max-w-[30px] xl:w-auto" width="40" height="40"
+                                                    alt="svg icon">
+                                                <span class="hidden">Search Properties</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div
+                                        class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/location.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="bedrooms10"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Bedrooms</label>
+                                                <select name="property" id="bedrooms10"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Bedrooms</option>
+                                                    <option value="1">kitchen</option>
+                                                    <option value="2">dinning rooms</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/property.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="property9"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Bathrooms</label>
+                                                <select name="property" id="property9"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Duplex House</option>
+                                                    <option value="1">Duplex House 1</option>
+                                                    <option value="2">Duplex House 2</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="garage"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Garage</label>
+                                                <select name="garage" id="garage"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">2 Garage</option>
+                                                    <option value="1">2 Garage</option>
+                                                    <option value="2">3 Garage</option>
+                                                    <option value="3">4 Garage</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <button class="search-properties-btn">
+                                                Search Properties
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+                            <div id="sell" class="tab-content bg-[rgb(232,241,255,0.9)] border-t border-solid border-[#fff] rounded-bl-[15px] rounded-br-[15px] rounded-tr-[15px] px-[15px] sm:px-[30px] py-[40px]">
+                                <form action="#">
+                                    <div class="advanced-searrch flex flex-wrap -mb-[45px]">
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/location.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="location2"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Location</label>
+                                                <input id="location2" type="text" placeholder="Choose location"
+                                                    class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full bg-transparent">
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/property.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="property2"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Property
+                                                    Type</label>
+                                                <select name="property" id="property2"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Duplex House</option>
+                                                    <option value="1">Duplex House 1</option>
+                                                    <option value="2">Duplex House 2</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="price2"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Price
+                                                    Range</label>
+                                                <select name="price" id="price2"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">1500 USD</option>
+                                                    <option value="1">1600 USD</option>
+                                                    <option value="2">1700 USD</option>
+                                                    <option value="3">1800 USD</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
+
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/area.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+
+                                            <div class="flex-1">
+                                                <label for="property-size2"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Property
+                                                    Size</label>
+                                                <select name="property-size" id="property-size2"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">2500 Sqft</option>
+                                                    <option value="1">2600 Sqft</option>
+                                                    <option value="2">2700 Sqft</option>
+                                                    <option value="3">2800 Sqft</option>
+                                                </select>
+                                            </div>
+                                            <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
+                                                <img src="assets/images/icon/search-outline.svg"
+                                                    class="max-w-[30px] xl:w-auto" width="40" height="40"
+                                                    alt="svg icon">
+                                                <span class="hidden">Search Properties</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div
+                                        class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/location.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="bedrooms"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Bedrooms</label>
+                                                <select name="property" id="bedrooms"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Bedrooms</option>
+                                                    <option value="1">kitchen</option>
+                                                    <option value="2">dinning rooms</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/property.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="property3"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Bathrooms</label>
+                                                <select name="property" id="property3"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Duplex House</option>
+                                                    <option value="1">Duplex House 1</option>
+                                                    <option value="2">Duplex House 2</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="garage2"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Garage</label>
+                                                <select name="garage" id="garage2"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">2 Garage</option>
+                                                    <option value="1">2 Garage</option>
+                                                    <option value="2">3 Garage</option>
+                                                    <option value="3">4 Garage</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <button class="search-properties-btn">
+                                                Search Properties
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+                            <div id="rent" class="tab-content bg-[rgb(232,241,255,0.9)] border-t border-solid border-[#fff] rounded-bl-[15px] rounded-br-[15px] rounded-tr-[15px] px-[15px] sm:px-[30px] py-[40px]">
+                                <form action="#">
+                                    <div class="advanced-searrch flex flex-wrap -mb-[45px]">
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/location.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="location7"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Location</label>
+                                                <input id="location7" type="text" placeholder="Choose location"
+                                                    class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full bg-transparent">
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/property.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="property8"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Property
+                                                    Type</label>
+                                                <select name="property" id="property8"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Apartments</option>
+                                                    <option value="1">Apartments 1</option>
+                                                    <option value="2">Apartments 2</option>
+                                                    <option value="3">Apartments 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="price7"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Price
+                                                    Range</label>
+                                                <select name="price" id="price7"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">6500 USD</option>
+                                                    <option value="1">6600 USD</option>
+                                                    <option value="2">6700 USD</option>
+                                                    <option value="3">6800 USD</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
+
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/area.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+
+                                            <div class="flex-1">
+                                                <label for="property-size9"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Property
+                                                    Size</label>
+                                                <select name="property-size" id="property-size9"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">7500 Sqft</option>
+                                                    <option value="1">7600 Sqft</option>
+                                                    <option value="2">7700 Sqft</option>
+                                                    <option value="3">7800 Sqft</option>
+                                                </select>
+                                            </div>
+                                            <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
+                                                <img src="assets/images/icon/search-outline.svg"
+                                                    class="max-w-[30px] xl:w-auto" width="40" height="40"
+                                                    alt="svg icon">
+                                                <span class="hidden">Search Properties</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div
+                                        class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/location.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="bedrooms6"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Bedrooms</label>
+                                                <select name="property" id="bedrooms6"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Bedrooms</option>
+                                                    <option value="1">kitchen</option>
+                                                    <option value="2">dinning rooms</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/property.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="property7"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Bathrooms</label>
+                                                <select name="property" id="property7"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Duplex House</option>
+                                                    <option value="1">Duplex House 1</option>
+                                                    <option value="2">Duplex House 2</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="garage20"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Garage</label>
+                                                <select name="garage" id="garage20"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">2 Garage</option>
+                                                    <option value="1">2 Garage</option>
+                                                    <option value="2">3 Garage</option>
+                                                    <option value="3">4 Garage</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <button class="search-properties-btn">
+                                                Search Properties
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+                            <div id="co-living" class="tab-content bg-[rgb(232,241,255,0.9)] border-t border-solid border-[#fff] rounded-bl-[15px] rounded-br-[15px] rounded-tr-[15px] px-[15px] sm:px-[30px] py-[40px]">
+                                <form action="#">
+                                    <div class="advanced-searrch flex flex-wrap -mb-[45px]">
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/location.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="location6"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Location</label>
+                                                <input id="location6" type="text" placeholder="Choose location"
+                                                    class="text-tiny placeholder:text-body leading-none font-light pr-3 focus:outline-none w-full bg-transparent">
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/property.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="property6"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Property
+                                                    Type</label>
+                                                <select name="property" id="property6"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Duplex House</option>
+                                                    <option value="1">Duplex House 1</option>
+                                                    <option value="2">Duplex House 2</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px]">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="price6"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Price
+                                                    Range</label>
+                                                <select name="price" id="price6"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">1500 USD</option>
+                                                    <option value="1">1600 USD</option>
+                                                    <option value="2">1700 USD</option>
+                                                    <option value="3">1800 USD</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] relative">
+
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/area.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+
+                                            <div class="flex-1">
+                                                <label for="property-size4"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Property
+                                                    Size</label>
+                                                <select name="property-size" id="property-size4"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">2500 Sqft</option>
+                                                    <option value="1">2600 Sqft</option>
+                                                    <option value="2">2700 Sqft</option>
+                                                    <option value="3">2800 Sqft</option>
+                                                </select>
+                                            </div>
+                                            <button class="search-btn absolute right-0 lg:right-[-60px] xl:right-[-70px]">
+                                                <img src="assets/images/icon/search-outline.svg"
+                                                    class="max-w-[30px] xl:w-auto" width="40" height="40"
+                                                    alt="svg icon">
+                                                <span class="hidden">Search Properties</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div
+                                        class="advanced-searrch-hidden flex flex-wrap items-center mt-[45px] -mb-[45px]">
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/location.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="bedrooms4"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Bedrooms</label>
+                                                <select name="property" id="bedrooms4"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Bedrooms</option>
+                                                    <option value="1">kitchen</option>
+                                                    <option value="2">dinning rooms</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="advanced-searrch-list flex lg:border-r lg:border-primary lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/property.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="property4"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Bathrooms</label>
+                                                <select name="property" id="property4"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">Duplex House</option>
+                                                    <option value="1">Duplex House 1</option>
+                                                    <option value="2">Duplex House 2</option>
+                                                    <option value="3">Duplex House 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <div class="mr-4 self-start shrink-0">
+                                                <img src="assets/images/icon/dollar-circle.svg" width="24" height="24"
+                                                    alt="svg icon">
+                                            </div>
+                                            <div class="flex-1">
+                                                <label for="garage4"
+                                                    class="font-lora block capitalize text-primary text-[17px] xl:text-[23px] leading-none mb-1">Garage</label>
+                                                <select name="garage" id="garage4"
+                                                    class="nice-select appearance-none bg-transparent text-tiny font-light cursor-pointer">
+                                                    <option selected value="0">2 Garage</option>
+                                                    <option value="1">2 Garage</option>
+                                                    <option value="2">3 Garage</option>
+                                                    <option value="3">4 Garage</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="advanced-searrch-list flex items-center lg:border-r lg:boprimaryborder-primaryD4D4] lg:mr-[40px] xl:mr-[50px] last:mr-0 last:border-r-0 mb-[45px] search-list">
+                                            <button class="search-properties-btn">
+                                                Search Properties
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Addvanced search tab end -->
+
+        <!-- Brand section Start-->
+
+        <section class="brand-section pt-[80px] lg:pt-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="mb-[60px] text-start">
+                            <span class="text-secondary text-tiny inline-block mb-2">Our Partner’s</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">
+                                Reliable Partner’s<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-span-12">
+                        <div class="brand-slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- swiper-slide start -->
+                                    @@loop('brand-carousel/index.html', [
+                                    {
+                                    "image": "1",
+                                    },
+                                    {
+                                    "image": "2",
+                                    },
+                                    {
+                                    "image": "3",
+                                    },
+                                    {
+                                    "image": "4",
+                                    },
+                                    {
+                                    "image": "5",
+                                    },
+                                    {
+                                    "image": "3",
+                                    },
+                                    ])
+
+                                    <!-- swiper-slide end-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand section End-->
+
+        <!-- Explore Cities Start-->
+        <section class="explore-cities-section pt-[80px] pb-[120px] lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="mb-[30px] lg:mb-[60px] text-center">
+                            <span class="text-secondary text-tiny inline-block mb-2">Explore Cities</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">Find
+                                Your
+                                Neighborhood<span class="text-secondary">.</span></h2>
+                        </div>
+                        <div class="cities-slider">
+                            <div class="swiper  -mx-[30px] -my-[60px] px-[30px] py-[60px]">
+                                <div class="swiper-wrapper">
+                                    <!-- swiper-slide start -->
+                                    @@loop('cities/index-2.html', [
+                                    {
+                                    "image": "1",
+                                    "type": "36 Properties",
+                                    "title": "New York",
+                                    },
+                                    {
+                                    "image": "2",
+                                    "type": "18 Properties",
+                                    "title": "Sun Francisco",
+                                    },
+
+                                    {
+                                    "image": "3",
+                                    "type": "27 Properties",
+                                    "title": "Washington D.C.",
+                                    },
+                                    {
+                                    "image": "4",
+                                    "type": "56 Properties",
+                                    "title": "New York",
+                                    },
+                                    {
+                                    "image": "3",
+                                    "type": "18 Properties Sun",
+                                    "title": "Francisco",
+                                    },
+
+                                    ])
+
+                                    <!-- swiper-slide end-->
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Explore Cities End-->
+
+        <!-- About Us Sectin Start -->
+        <section class="about-section lg:pt-[55px]">
+            <div class="container">
+                @@include('about/index-4.html')
+            </div>
+        </section>
+        <!-- About Us Sectin End -->
+
+        <!-- Popular Properties start -->
+        <section class="popular-properties py-[80px] lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="flex flex-col items-center justify-center mb-[50px]">
+                            <span class="text-secondary text-tiny inline-block mb-2">Best Choice</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium"> Popular Properties<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="properties-slider">
+                            <div class="swiper -mx-[20px] lg:-mx-[15px] -my-[60px] px-[20px] lg:px-[15px] py-[60px]">
+                                <div class="swiper-wrapper">
+                                    <!-- swiper-slide start -->
+                                    @@loop('properties/index-2.html', [
+                                    {
+                                        "image": "1",
+                                        "type": "Sale",
+                                        "title": "Orchid Casel de Paradise.",
+                                        "address": "18B Central Street, San Francisco",
+                                        "price": "$255300",
+                                        "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                        },
+                                        {
+                                        "image": "2",
+                                        "type": "Rent",
+                                        "title": "Ruposibangla de parlosia.",
+                                        "address": "18B Central Street, San Francisco",
+                                        "price": "$255300",
+                                        "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                        },
+                                        {
+                                        "image": "3",
+                                        "type": "Sale",
+                                        "title": "Sinomen Studio Palace.",
+                                        "address": "194 Mercer Street, 627 Broadway, New York",
+                                        "price": "$255300",
+                                        "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                        },
+
+                                    ])
+
+                                    <!-- swiper-slide end-->
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Popular Properties end -->
+        
+        <!-- Video Section Start -->
+        <section class="video-section mt-12">
+            <div class="container">
+                @@include('video/index-4.html')
+            </div>
+        </section>
+        <!-- Video Section End -->
+
+        <!-- Featured Properties Start -->
+        <section class="featured-properties py-[80px] lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div
+                        class="col-span-12 flex flex-wrap flex-col md:flex-row md:items-center justify-between mb-[50px]">
+                        <div class="mb-5 lg:mb-0">
+                            <span class="text-secondary text-tiny inline-block mb-2">Newly Added</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">
+                                Featured
+                                Properties<span class="text-secondary">.</span></h2>
+                        </div>
+                        <ul class="all-properties flex flex-wrap lg:pt-[10px]">
+                            <li data-tab="all-properties"
+                                class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none active"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">All
+                                    Properties</button></li>
+                            <li data-tab="ForBuy" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">For
+                                    Buy</button></li>
+                            <li data-tab="ForSale" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">For
+                                    Sale</button></li>
+                            <li data-tab="ForRent" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">For
+                                    Rent</button></li>
+                            <li data-tab="co-living2" class="md:mr-[0px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">Co-living</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-12">
+                        <div class="all-properties properties-tab-content active">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index-2.html', [
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "5",
+                                "type": "Co-living",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Rent",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="ForBuy properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index.html', [
+                                {
+                                "image": "1",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="ForSale properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index.html', [
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "5",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "1",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="ForRent properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index.html', [
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "7",
+                                "type": "Rent",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "8",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "1",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="co-living2 properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index.html', [
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "8",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "2",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Properties End -->
+
+        <!-- Testimonial carousel Start -->
+        <section class="testimonial-section pb-[80px] lg:pb-[120px] bg-center bg-no-repeat bg-white relative z-10">
+            <div class="container testimonial-carousel-two relative">
+                <div class="scene dots-shape absolute left-0">
+                    <img data-depth="0.4" class="z-[1]" src="assets/images/testimonial/dots.png" width="106"
+                        height="129" loading="lazy" alt="shape">
+                </div>
+                <div class="grid items-center grid-cols-12 gap-x-[30px]">
+                    <div class="col-span-12 relative">
+                        <div class="swiper rounded-[30px] pb-[40px] md:pb-0">
+                            <div class="swiper-wrapper">
+                                @@loop('testimonial-carousel/style-two.html', [
+                                {
+                                "image": "2",
+                                "title": "Oliver Stephen",
+                                },
+                                {
+                                "image": "4",
+                                "title": "Sun Francisco",
+                                },
+
+                                {
+                                "image": "2",
+                                "title": "Oliver Stephen",
+                                },
+
+                                ])
+
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="testimonial-pagination hidden sm:block">
+                                <div
+                                    class="swiper-button-prev w-[36px] h-[36px] rounded-full bg-secondary xl:bg-primary  text-white hover:bg-secondary top-auto bottom-[85px] left-[30px]">
+                                </div>
+                                <div
+                                    class="swiper-button-next w-[36px] h-[36px] rounded-full bg-secondary xl:bg-primary  text-white hover:bg-secondary top-auto bottom-[85px] left-[85px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial carousel End -->
+
+        <!-- Blog Section Start  -->
+        <section class="blog-section relative pb-[60px] md:pb-[80px] lg:pb-[120px]">
+            <div class="container">
+                <div class="">
+                    <div class="">
+                        <div class="mb-[60px] text-center">
+                            <span class="text-secondary text-tiny inline-block mb-2">Our Blog</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">
+                                Check our blog post's<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] mb-[-30px]">
+                            @@loop('blog/index.html', [
+                            {
+                            "image": "1",
+                            "postmeta":"James Alber on 22 December, 21",
+                            "title": "Tip’s about Real Estate Recent Conditions from Agent.",
+                            },
+                            {
+                            "image": "2",
+                            "postmeta": "Shohel Gyes on 21 December, 21",
+                            "title": "Importance of Build quality of modern Real Estate.",
+                            },
+                            {
+                            "image": "3",
+                            "postmeta": "Shohel Gyes on 21 December, 21",
+                            "title": "Importance of Build quality of modern Real Estate.",
+                            },
+                            ])
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End  -->
+
+        <!-- News Letter section start -->
+        <section class="py-[80px] lg:p-[90px] bg-primary relative">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="col-span">
+                        @@include('news-letter/index-2.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Letter section End -->
+
+        <!-- Footer Start -->
+        <footer class="footer bg-[#EEEEEE] pt-[80px] lg:pt-[120px] pb-30 md:pb-[80px] lg:pb-[110px] font-normal bg-no-repeat"
+            style="background-image: url('assets/images/footer/pattern.png');">
+            <div class="container">
+                @@include('footer/index.html')
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <a id="scrollUp" class="w-12 h-12 rounded-full bg-primary text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up">
+
+            <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"/></svg>
+
+        </a>
+    </div>
+    @@include('scripts.html', {"page": "home", "plugins":
+    ["swiper-bundle.min","popper.min","jquery.magnific-popup.min","jquery.ajaxchimp.min","parallax.min","jquery.nice-select.min"]})
+
+</body>
+
+</html>

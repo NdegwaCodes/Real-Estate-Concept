@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+@@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup","nice-select"]})
+
+<body class="font-karla text-body text-tiny">
+    <div class="overflow-hidden">
+
+        <!-- header top start -->
+        <div class="bg-primary font-lora text-white py-[11px]">
+            @@include('header/topbar.html')
+        </div>
+        <!-- header top end -->
+
+        <!-- Header start -->
+        <header id="sticky-header" class="relative bg-[#E9F1FF] lg:py-[20px] z-10 secondary-sticky secondary-sticky">
+            @@include('header/header-one.html')
+        </header>
+        @@include('offcanvas/index.html')
+        <!-- Header end -->
+
+        <!-- Hero section start -->
+        <section
+            class="bg-no-repeat bg-center bg-cover bg-[#FFF6F0] h-[350px] lg:h-[513px] flex flex-wrap items-center relative before:absolute before:inset-0 before:content-[''] before:bg-[#000000] before:opacity-[70%]"
+            style="background-image: url('assets/images/breadcrumb/bg-1.png');">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="max-w-[700px]  mx-auto text-center text-white relative z-[1]">
+                            <div class="mb-5"><span class="text-base block">Property ADD</span></div>
+                            <h1
+                                class="font-lora text-[32px] sm:text-[50px] md:text-[68px] lg:text-[50px] leading-tight xl:text-2xl font-medium">
+                                Add Property
+                            </h1>
+
+                            <p class="text-base mt-5 max-w-[500px] mx-auto text-center">
+                                Huge number of propreties availabe here for buy and sell
+                                also you can find here co-living property as you like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- create agency Etart-->
+        <div class="pt-[80px] lg:pt-[120px] add-properties-form-select">
+            <div class="container">
+                @@include('contact-form/index-2.html')
+            </div>
+        </div>
+        <!-- create agency End-->
+
+        <section class="pb-[80px] lg:pb-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-x-[30px] mb-[-45px]">
+
+                    <div class="col-span-12 md:col-span-6 mb-[45px]">
+                        <h3 class="mb-[40px] font-lora leading-none text-primary  text-[24px] font-medium">Property Aminities
+                        </h3>
+                        <form action="/action_page.php" method="get" class="custom-check">
+                            <ul class="mb-[-30px] list-none text-[15px] lg:text-[16px] flex flex-wrap">
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox" name="checkbox">
+                                    <label for="checkbox">Air Conditioning</label>
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox2" name="checkbox2">
+                                    <label for="checkbox2">Bedding</label>
+
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox3" name="checkbox3">
+                                    <label for="checkbox3">Balcony</label>
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox4" name="checkbox4">
+                                    <label for="checkbox4"> ACable TV</label>
+
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox5" name="checkbox5">
+                                    <label for="checkbox5">Oven</label>
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox6" name="checkbox6">
+                                    <label for="checkbox6">Internet</label>
+                                </li>
+
+                                <li class="mb-[30px] capitalize w-1/2">
+
+                                    <input type="checkbox" id="checkbox7" name="checkbox7">
+                                    <label for="checkbox7">Parking</label>
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox8" name="checkbox8">
+                                    <label for="checkbox8">Lift</label>
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox9" name="checkbox9">
+                                    <label for="checkbox9">Pool</label>
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox10" name="checkbox10">
+                                    <label for="checkbox10">Dishwasher</label>
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+
+                                    <input type="checkbox" id="checkbox11" name="checkbox11">
+                                    <label for="checkbox11"> Washing Machine</label>
+
+
+                                </li>
+                                <li class="mb-[30px] capitalize w-1/2">
+                                    <input type="checkbox" id="checkbox12" name="checkbox12">
+                                    <label for="checkbox12">Toaster</label>
+
+                                </li>
+
+
+                            </ul>
+                        </form>
+
+                        <div class="mt-[50px] lg:mt-[80px]">
+                            <button
+                                class="before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-secondary before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-[40px] py-[15px] capitalize font-medium text-white text-[14px] xl:text-[16px] relative after:block after:absolute after:inset-0 after:-z-[2] after:bg-primary after:rounded-md after:transition-all">
+                                Add Property</button>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-6 mb-[45px]">
+                        <h3 class="mb-[40px] font-lora leading-none text-primary text-[24px] font-medium">Place on Map
+                        </h3>
+
+                        <div class="h-[350px] rounded-[6px] overflow-hidden">
+                            <iframe class="w-full h-full"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4814229.011985735!2d-65.89121968758322!3d-7.7486900084225026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91e8605342744385%3A0x3d3c6dc1394a7fc7!2sAmazon%20Rainforest!5e0!3m2!1sen!2sbd!4v1644813708270!5m2!1sen!2sbd"
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Letter section start -->
+        <section class="py-[80px] lg:p-[90px] bg-primary relative">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="col-span">
+                        @@include('news-letter/index-2.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Letter section End -->
+
+        <!-- Footer Start -->
+        <footer class="footer bg-[#EEEEEE] pt-[80px] lg:pt-[120px] pb-30 md:pb-[80px] lg:pb-[110px] font-normal bg-no-repeat"
+            style="background-image: url('assets/images/footer/pattern.png');">
+            <div class="container">
+                @@include('footer/index.html')
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <a id="scrollUp"
+            class="w-12 h-12 rounded-full bg-primary text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10"
+            href="#" aria-label="scroll up">
+
+            <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z" />
+            </svg>
+
+        </a>
+    </div>
+
+
+    @@include('scripts.html', {"page": "home", "plugins":
+    ["swiper-bundle.min","popper.min","jquery.magnific-popup.min","jquery.ajaxchimp.min","parallax.min","jquery.waypoints","jquery.counterup.min","jquery.nice-select.min"]})
+
+</body>
+
+</html>

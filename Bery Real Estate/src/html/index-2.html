@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+@@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup","nice-select"]})
+
+<body class="font-karla text-body text-tiny">
+    <div class="overflow-hidden">
+        <!-- Header start -->
+
+        <header id="sticky-header" class="absolute left-0 top-[15px] lg:top-[30px] xl:top-[45px] w-full z-10">
+            @@include('header/header-one.html')
+        </header>
+
+
+
+        @@include('offcanvas/index.html')
+        <!-- Header end -->
+
+
+
+        <!-- Hero section start -->
+        @@include('hero/index-2.html')
+        <!-- Hero section end -->
+
+
+
+        <!-- Addvanced search tab start -->
+        @@include('search-tab/index.html')
+        <!-- Addvanced search tab end -->
+
+
+
+        <!-- Explore Cities Start-->
+        <section class="explore-cities-section pt-[80px] pb-[120px] lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="mb-[30px] lg:mb-[60px] text-center">
+                            <span class="text-secondary text-tiny inline-block mb-2">Explore Cities</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">Find
+                                Your
+                                Neighborhood<span class="text-secondary">.</span></h2>
+                        </div>
+                        <div class="cities-slider">
+                            <div class="swiper  -mx-[30px] -my-[60px] px-[30px] py-[60px]">
+                                <div class="swiper-wrapper">
+                                    <!-- swiper-slide start -->
+                                    @@loop('cities/index-2.html', [
+                                    {
+                                    "image": "1",
+                                    "type": "36 Properties",
+                                    "title": "New York",
+                                    },
+                                    {
+                                    "image": "2",
+                                    "type": "18 Properties",
+                                    "title": "Sun Francisco",
+                                    },
+
+                                    {
+                                    "image": "3",
+                                    "type": "27 Properties",
+                                    "title": "Washington D.C.",
+                                    },
+                                    {
+                                    "image": "4",
+                                    "type": "56 Properties",
+                                    "title": "New York",
+                                    },
+                                    {
+                                    "image": "2",
+                                    "type": "18 Properties Sun",
+                                    "title": "Francisco",
+                                    },
+
+                                    ])
+
+                                    <!-- swiper-slide end-->
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Explore Cities End-->
+
+
+
+        <!-- About Us Sectin Start -->
+        <section class="about-section lg:pt-[55px]">
+            <div class="container">
+                @@include('about/index.html')
+            </div>
+        </section>
+        <!-- About Us Sectin End -->
+
+        <!-- Popular Properties start -->
+        <section class="popular-properties py-[80px] lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="flex flex-col items-center justify-center mb-[50px]">
+                            <span class="text-secondary text-tiny inline-block mb-2">Best Choice</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium"> Popular Properties<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="properties-slider">
+                            <div class="swiper -mx-[20px] lg:-mx-[15px] -my-[60px] px-[20px] lg:px-[15px] py-[60px]">
+                                <div class="swiper-wrapper">
+                                    <!-- swiper-slide start -->
+                                    @@loop('properties/index-2.html', [
+                                    {
+                                        "image": "1",
+                                        "type": "Sale",
+                                        "title": "Orchid Casel de Paradise.",
+                                        "address": "18B Central Street, San Francisco",
+                                        "price": "$255300",
+                                        "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                        },
+                                        {
+                                        "image": "2",
+                                        "type": "Rent",
+                                        "title": "Ruposibangla de parlosia.",
+                                        "address": "18B Central Street, San Francisco",
+                                        "price": "$255300",
+                                        "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                        },
+                                        {
+                                        "image": "3",
+                                        "type": "Sale",
+                                        "title": "Sinomen Studio Palace.",
+                                        "address": "194 Mercer Street, 627 Broadway, New York",
+                                        "price": "$255300",
+                                        "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                        },
+
+                                    ])
+
+                                    <!-- swiper-slide end-->
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Popular Properties end -->
+
+        <!-- Video Section Start -->
+        <section class="video-section">
+            <div class="container">
+                @@include('video/index-3.html')
+                <div class="flex flex-row items-baseline gap-2 mt-10 leading-[1]">
+                    <span class="text-secondary text-[16px] sm:text-[20px] font-lora font-normal">Have a question?</span>
+                    <a class="text-primary text-[22px] sm:text-[28px] font-lora font-medium" href="tel:+01234874854">+01234 874 854</a>
+                </div>
+            </div>
+        </section>
+        <!-- Video Section End -->
+
+        <!-- Featured Properties Start -->
+        <section class="featured-properties py-[80px] lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <span class="text-secondary text-tiny inline-block mb-2">Newly Added</span>
+                    </div>
+                    <div
+                        class="col-span-12 flex flex-wrap flex-col md:flex-row items-start justify-between mb-[50px]">
+                        <div class="mb-5 lg:mb-0">
+                           
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">
+                                Featured
+                                Properties<span class="text-secondary">.</span></h2>
+                        </div>
+                        <ul class="all-properties flex flex-wrap lg:pt-[10px]">
+                            <li data-tab="all-properties"
+                                class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none active"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">All
+                                    Properties</button></li>
+                            <li data-tab="ForBuy" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">For
+                                    Buy</button></li>
+                            <li data-tab="ForSale" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">For
+                                    Sale</button></li>
+                            <li data-tab="ForRent" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">For
+                                    Rent</button></li>
+                            <li data-tab="co-living2" class="md:mr-[0px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">Co-living</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-12">
+                        <div class="all-properties properties-tab-content active">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index-2.html', [
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "5",
+                                "type": "Co-living",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Rent",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="ForBuy properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index.html', [
+                                {
+                                "image": "1",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="ForSale properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index.html', [
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "5",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "1",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="ForRent properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index.html', [
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "7",
+                                "type": "Rent",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "8",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "1",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="co-living2 properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index.html', [
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage"
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia"
+                                },
+                                {
+                                "image": "8",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                {
+                                "image": "2",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "info": "1230 Sq.fit - 4 Bed - 3 Bath - 2 Garage"
+                                },
+                                ])
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Properties End -->
+
+        <!-- Brand section Start-->
+        <section class="brand-section pb-[80px] lg:pb-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="mb-[60px] text-center">
+                            <span class="text-secondary text-tiny inline-block mb-2">Our Partner’s</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">
+                                Reliable Partner’s<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-span-12">
+                        <div class="brand-slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- swiper-slide start -->
+                                    @@loop('brand-carousel/index.html', [
+                                    {
+                                    "image": "1",
+                                    },
+                                    {
+                                    "image": "2",
+                                    },
+                                    {
+                                    "image": "3",
+                                    },
+                                    {
+                                    "image": "4",
+                                    },
+                                    {
+                                    "image": "5",
+                                    },
+                                    {
+                                    "image": "3",
+                                    },
+                                    ])
+
+                                    <!-- swiper-slide end-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Brand section End-->
+
+        <!-- Testimonial carousel Start -->
+        <section class="testimonial-section bg-no-repeat bg-white relative z-[5]"">
+            <div class="container testimonial-carousel-two relative">
+                <div class="scene dots-shape absolute left-0">
+                    <img data-depth="0.4" class="z-[1]" src="assets/images/testimonial/dots.png" width="106"
+                        height="129" loading="lazy" alt="shape">
+                </div>
+                <div class="grid items-center grid-cols-12 gap-x-[30px]">
+                    <div class="col-span-12 relative">
+                        <div class="swiper rounded-[30px] pb-[40px] md:pb-0">
+                            <div class="swiper-wrapper">
+                                @@loop('testimonial-carousel/style-two.html', [
+                                {
+                                "image": "2",
+                                "title": "Oliver Stephen",
+                                },
+                                {
+                                "image": "4",
+                                "title": "Sun Francisco",
+                                },
+
+                                {
+                                "image": "2",
+                                "title": "Oliver Stephen",
+                                },
+
+                                ])
+
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="testimonial-pagination hidden sm:block">
+                                <div
+                                    class="swiper-button-prev w-[36px] h-[36px] rounded-full bg-secondary xl:bg-primary  text-white hover:bg-secondary top-auto bottom-[85px] left-[30px]">
+                                </div>
+                                <div
+                                    class="swiper-button-next w-[36px] h-[36px] rounded-full bg-secondary xl:bg-primary  text-white hover:bg-secondary top-auto bottom-[85px] left-[85px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial carousel End -->
+
+        <!-- Blog Section Start  -->
+        <section class="blog-section relative py-[60px] md:py-[80px] lg:py-[120px]">
+            <div class="container">
+                <div class="">
+                    <div class="">
+                        <div class="mb-[60px] text-center">
+                            <span class="text-secondary text-tiny inline-block mb-2">Our Blog</span>
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">
+                                Check our blog post's<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] mb-[-30px]">
+                            @@loop('blog/index.html', [
+                            {
+                            "image": "1",
+                            "postmeta":"James Alber on 22 December, 21",
+                            "title": "Tip’s about Real Estate Recent Conditions from Agent.",
+                            },
+                            {
+                            "image": "2",
+                            "postmeta": "Shohel Gyes on 21 December, 21",
+                            "title": "Importance of Build quality of modern Real Estate.",
+                            },
+                            {
+                            "image": "3",
+                            "postmeta": "Shohel Gyes on 21 December, 21",
+                            "title": "Importance of Build quality of modern Real Estate.",
+                            },
+                            ])
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End  -->
+
+        <!-- News Letter section start -->
+        <section class="py-[80px] lg:p-[90px] bg-primary relative">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="col-span">
+                        @@include('news-letter/index-2.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Letter section End -->
+
+
+        <!-- Footer Start -->
+        <footer class="footer bg-[#EEEEEE] pt-[80px] lg:pt-[120px] pb-30 md:pb-[80px] lg:pb-[110px] font-normal bg-no-repeat"
+            style="background-image: url('assets/images/footer/pattern.png');">
+            <div class="container">
+                @@include('footer/index.html')
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <a id="scrollUp" class="w-12 h-12 rounded-full bg-primary text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up">
+            <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"/></svg>
+        </a>
+    </div>
+
+
+    @@include('scripts.html', {"page": "home", "plugins":
+    ["swiper-bundle.min","popper.min","jquery.magnific-popup.min","jquery.ajaxchimp.min","parallax.min","jquery.nice-select.min"]})
+
+</body>
+
+</html>

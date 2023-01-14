@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+@@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
+
+<body class="font-karla text-body text-tiny">
+    <div class="overflow-hidden">
+
+        <!-- header top start -->
+        <div class="bg-primary font-lora text-white py-[11px]">
+            @@include('header/topbar.html')
+        </div>
+        <!-- header top end -->
+
+        <!-- Header start -->
+        <header id="sticky-header" class="relative bg-[#E9F1FF] lg:py-[20px] z-10 secondary-sticky secondary-sticky">
+            @@include('header/header-one.html')
+        </header>
+        @@include('offcanvas/index.html')
+        <!-- Header end -->
+
+        <!-- Hero section start -->
+        <section
+            class="bg-no-repeat bg-center bg-cover bg-[#FFF6F0] h-[350px] lg:h-[513px] flex flex-wrap items-center relative before:absolute before:inset-0 before:content-[''] before:bg-[#000000] before:opacity-[70%]"
+            style="background-image: url('assets/images/breadcrumb/bg-1.png');">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="max-w-[700px]  mx-auto text-center text-white relative z-[1]">
+                            <div class="mb-5"><span class="text-base block">Listed Agencies</span></div>
+                            <h1 class="font-lora text-[32px] sm:text-[50px] md:text-[68px] lg:text-[50px] leading-tight xl:text-2xl font-medium">Agency Details</h1>
+                            <p class="text-base mt-5 max-w-[500px] mx-auto text-center">Huge number of propreties availabe here for buy and sell also you can find here co-living property as you like</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- Brand Section Etart-->
+        <section class="py-[80px] lg:py-[125px]">
+            <div class="container">
+                <div class="grid sm:grid-cols-12">
+                    <div class="col-span-12 md:col-span-4 lg:col-span-3">
+                        <ul class="flex flex-wrap lg:flex-col list-none items-center border-[1px] border-secondary rounded-[8px] h-full text-center px-10 py-[30px] md:py-[50] lg:py-[55px] xl:py-[60px] xl:max-w-[230px] xl:mr-0 md:mr-[20px] ">
+                            <li class="w-full border-b-[1px] border-[#1B2D40]/60 pb-3 mb-3 md:pb-3 md:mb-3 lg:pb-6 xl:pb-10 lg:mb-6 xl:mb-10">
+                                <span class="font-lora text-secondary text-lg"><span class="counter-up">135</span>
+                                    <span>k+</span></span>
+                                <p>Properties Sold</p>
+                            </li>
+                            <li class="w-full border-b-[1px] border-[#1B2D40]/60 pb-3 mb-3 md:pb-3 md:mb-3 lg:pb-6 xl:pb-10 lg:mb-6 xl:mb-10">
+                                <span class="font-lora text-secondary text-lg"><span class="counter-up">172</span>
+                                    <span>k+</span></span>
+                                <p>Customers</p>
+                            </li>
+                            <li class="w-full block">
+                                <span class="font-lora text-secondary text-lg"><span class="counter-up">10</span>
+                                    <span>+</span></span>
+                                <p>Awards Win</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-12 md:col-span-8 lg:col-span-9 mt-10 md:mt-0">
+                        <div class="p-[30px] rounded-[10px] drop-shadow-[0px_2px_15px_rgba(0,0,0,0.1)] bg-[#FFFDFC]">
+                            <img class="self-center mb-[15px] w-full h-full" src="assets/images/brands/brand-lg.png" alt="brand logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-7 mt-20">
+                    <div class="max-w-[530px]">
+                        <h4 class="font-lora text-primary text-[24px] lg:text-[36px] mb-[10px]">Overview<span class="text-secondary">.</span></h4>
+                        <p class="mb-12">Huge number of propreties availabe here for buy, sell and Rent. Also you find here co-living property, lots opportunity you have to choose here and enjoy huge discount you can get. She work like a machine and can serve best vicees for the clients co-living property, lots pportunity you have to choose here and enjoy huge discount you can get. She work like a machine discount you can get.</p>
+                       <ul class="font-lora text-[18px] flex flex-wrap sm:items-center justify-between m-[-10px] flex-col sm:flex-row items-start">
+                           <li class="m-[10px]">
+                               <span class="text-secondary block">Phone no.</span>
+                               <a href="tel:+9985254784" class="text-primary">+9985 254 784</a>
+                           </li>
+                           <li class="m-[10px]">
+                               <span class="text-secondary block">Agent.</span>
+                               <span class="text-primary"> 15 Agent</span>
+                           </li>
+                           <li class="m-[10px]">
+                               <span class="text-secondary block">Properties.</span>
+                               <span class="text-primary">75 Properties</span>
+                           </li>
+                       </ul>
+                    </div>
+                    <div class="">
+                        <h4 class="font-lora text-primary text-[24px] lg:text-[36px] mb-[10px]">Address<span class="text-secondary">.</span></h4>
+                        <span class="underline font-light block text-[18px] mb-[15px]">2265 Paul Wayne Haggerty Road, New Orleans</span>
+                        <h4 class="font-lora text-primary text-[24px] lg:text-[36px] mb-[10px] mt-10">Rating<span class="text-secondary">.</span></h4>
+                        <div class="flex flex-wrap mb-[30px]">
+                            <span class="mx-[4px]">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.1887 5.51714L10.2215 4.94058L8.4481 1.34527C8.39966 1.24683 8.31997 1.16714 8.22154 1.11871C7.97466 0.996832 7.67466 1.09839 7.55122 1.34527L5.77779 4.94058L1.8106 5.51714C1.70123 5.53277 1.60123 5.58433 1.52466 5.66246C1.4321 5.75759 1.3811 5.88558 1.38286 6.0183C1.38461 6.15103 1.43899 6.27762 1.53404 6.37027L4.40435 9.16871L3.72623 13.1203C3.71032 13.2122 3.72049 13.3067 3.75559 13.3932C3.79068 13.4796 3.84929 13.5545 3.92477 13.6093C4.00025 13.6641 4.08958 13.6967 4.18263 13.7033C4.27568 13.71 4.36873 13.6904 4.45123 13.6468L7.99966 11.7812L11.5481 13.6468C11.645 13.6984 11.7575 13.7156 11.8653 13.6968C12.1372 13.65 12.32 13.3921 12.2731 13.1203L11.595 9.16871L14.4653 6.37027C14.5434 6.29371 14.595 6.19371 14.6106 6.08433C14.6528 5.81089 14.4622 5.55777 14.1887 5.51714Z"
+                                        fill="#B39359" />
+                                </svg>
+                            </span>
+                            <span class="mx-[4px]">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.1887 5.51714L10.2215 4.94058L8.4481 1.34527C8.39966 1.24683 8.31997 1.16714 8.22154 1.11871C7.97466 0.996832 7.67466 1.09839 7.55122 1.34527L5.77779 4.94058L1.8106 5.51714C1.70123 5.53277 1.60123 5.58433 1.52466 5.66246C1.4321 5.75759 1.3811 5.88558 1.38286 6.0183C1.38461 6.15103 1.43899 6.27762 1.53404 6.37027L4.40435 9.16871L3.72623 13.1203C3.71032 13.2122 3.72049 13.3067 3.75559 13.3932C3.79068 13.4796 3.84929 13.5545 3.92477 13.6093C4.00025 13.6641 4.08958 13.6967 4.18263 13.7033C4.27568 13.71 4.36873 13.6904 4.45123 13.6468L7.99966 11.7812L11.5481 13.6468C11.645 13.6984 11.7575 13.7156 11.8653 13.6968C12.1372 13.65 12.32 13.3921 12.2731 13.1203L11.595 9.16871L14.4653 6.37027C14.5434 6.29371 14.595 6.19371 14.6106 6.08433C14.6528 5.81089 14.4622 5.55777 14.1887 5.51714Z"
+                                        fill="#B39359" />
+                                </svg>
+                            </span>
+                            <span class="mx-[4px]">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.1887 5.51714L10.2215 4.94058L8.4481 1.34527C8.39966 1.24683 8.31997 1.16714 8.22154 1.11871C7.97466 0.996832 7.67466 1.09839 7.55122 1.34527L5.77779 4.94058L1.8106 5.51714C1.70123 5.53277 1.60123 5.58433 1.52466 5.66246C1.4321 5.75759 1.3811 5.88558 1.38286 6.0183C1.38461 6.15103 1.43899 6.27762 1.53404 6.37027L4.40435 9.16871L3.72623 13.1203C3.71032 13.2122 3.72049 13.3067 3.75559 13.3932C3.79068 13.4796 3.84929 13.5545 3.92477 13.6093C4.00025 13.6641 4.08958 13.6967 4.18263 13.7033C4.27568 13.71 4.36873 13.6904 4.45123 13.6468L7.99966 11.7812L11.5481 13.6468C11.645 13.6984 11.7575 13.7156 11.8653 13.6968C12.1372 13.65 12.32 13.3921 12.2731 13.1203L11.595 9.16871L14.4653 6.37027C14.5434 6.29371 14.595 6.19371 14.6106 6.08433C14.6528 5.81089 14.4622 5.55777 14.1887 5.51714Z"
+                                        fill="#B39359" />
+                                </svg>
+                            </span>
+                            <span class="mx-[4px]">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.1887 5.51714L10.2215 4.94058L8.4481 1.34527C8.39966 1.24683 8.31997 1.16714 8.22154 1.11871C7.97466 0.996832 7.67466 1.09839 7.55122 1.34527L5.77779 4.94058L1.8106 5.51714C1.70123 5.53277 1.60123 5.58433 1.52466 5.66246C1.4321 5.75759 1.3811 5.88558 1.38286 6.0183C1.38461 6.15103 1.43899 6.27762 1.53404 6.37027L4.40435 9.16871L3.72623 13.1203C3.71032 13.2122 3.72049 13.3067 3.75559 13.3932C3.79068 13.4796 3.84929 13.5545 3.92477 13.6093C4.00025 13.6641 4.08958 13.6967 4.18263 13.7033C4.27568 13.71 4.36873 13.6904 4.45123 13.6468L7.99966 11.7812L11.5481 13.6468C11.645 13.6984 11.7575 13.7156 11.8653 13.6968C12.1372 13.65 12.32 13.3921 12.2731 13.1203L11.595 9.16871L14.4653 6.37027C14.5434 6.29371 14.595 6.19371 14.6106 6.08433C14.6528 5.81089 14.4622 5.55777 14.1887 5.51714Z"
+                                        fill="#B39359" />
+                                </svg>
+                            </span>
+                            <span class="mx-[4px]">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.1887 5.51714L10.2215 4.94058L8.4481 1.34527C8.39966 1.24683 8.31997 1.16714 8.22154 1.11871C7.97466 0.996832 7.67466 1.09839 7.55122 1.34527L5.77779 4.94058L1.8106 5.51714C1.70123 5.53277 1.60123 5.58433 1.52466 5.66246C1.4321 5.75759 1.3811 5.88558 1.38286 6.0183C1.38461 6.15103 1.43899 6.27762 1.53404 6.37027L4.40435 9.16871L3.72623 13.1203C3.71032 13.2122 3.72049 13.3067 3.75559 13.3932C3.79068 13.4796 3.84929 13.5545 3.92477 13.6093C4.00025 13.6641 4.08958 13.6967 4.18263 13.7033C4.27568 13.71 4.36873 13.6904 4.45123 13.6468L7.99966 11.7812L11.5481 13.6468C11.645 13.6984 11.7575 13.7156 11.8653 13.6968C12.1372 13.65 12.32 13.3921 12.2731 13.1203L11.595 9.16871L14.4653 6.37027C14.5434 6.29371 14.595 6.19371 14.6106 6.08433C14.6528 5.81089 14.4622 5.55777 14.1887 5.51714Z"
+                                        fill="#B39359" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Brand Section End-->
+
+        <!-- Featured Properties Start -->
+        <section class="featured-properties pb-[80px] lg:pb-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <span class="text-secondary text-tiny inline-block mb-2">Our Property</span>
+                    </div>
+                    <div
+                        class="col-span-12 flex flex-wrap flex-col md:flex-row items-start justify-between mb-[50px]">
+                        <div class="mb-5 lg:mb-0">
+                           
+                            <h2 class="font-lora text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize font-medium">
+                                Properties Collections<span class="text-secondary">.</span></h2>
+                        </div>
+                        <ul class="all-properties flex flex-wrap lg:pt-[10px]">
+                            <li data-tab="all-properties"
+                                class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none active"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">All
+                                    Properties</button></li>
+                            <li data-tab="ForBuy" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">Villa</button></li>
+                            <li data-tab="ForSale" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">Duplex</button></li>
+                            <li data-tab="ForRent" class="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">Appartment</button></li>
+                            <li data-tab="co-living2" class="md:mr-[0px] mb-4 lg:mb-0 leading-none"><button
+                                    class="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">Houses</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-12">
+                        <div class="all-properties properties-tab-content active">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index-2.html', [
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "5",
+                                "type": "Co-living",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": " $1553/m",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage",
+                                "date": "Added: 25 November, 2021 "
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "Duplex de Villa.",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "3",
+                                "type": "Rent",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$1553/m",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                ])
+                            </div>
+                        </div>
+                    
+                        <div class="ForBuy properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index-2.html', [
+                                {
+                                "image": "1",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$1553/m",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage",
+                                "date": "Added: 25 November, 2021 "
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$1553/m",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "3",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="ForSale properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index-2.html', [
+                                {
+                                "image": "4",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$1553/m",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage",
+                                "date": "Added: 25 November, 2021 "
+                                },
+
+                                {
+                                "image": "5",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$1553/m",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "1",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="ForRent properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index-2.html', [
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "7",
+                                "type": "Rent",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$1553/m",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage",
+                                "date": "Added: 25 November, 2021 "
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Sale",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "8",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$1553/m",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "1",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                ])
+                            </div>
+                        </div>
+                        <div class="co-living2 properties-tab-content">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+
+                                @@loop('properties/index-2.html', [
+                                {
+                                "image": "7",
+                                "type": "Sale",
+                                "title": "Elite Garden Resedence.",
+                                "address": "253 Montril Street, South Town, Miami",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "5",
+                                "type": "Sale",
+                                "title": "De Parasiya Appartment.",
+                                "address": "18B Central Street, San Francisco",
+                                "price": "$255300",
+                                "info": "1800 Sq.fit - 5 Bed - 3 Bath - 2 Garage",
+                                "date": "Added: 25 November, 2021 "
+                                },
+
+                                {
+                                "image": "6",
+                                "type": "Rent",
+                                "title": "Duplex de Villa",
+                                "address": "194 Mercer Street, 627 Broadway, New York",
+                                "price": "$255300",
+                                "info": "4356 Riverside Drive, Augusta, Georgia",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "8",
+                                "type": "Sale",
+                                "title": "Orchid Casel de Paradise.",
+                                "address": "2846 West Side Avenue, New Jersey",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "3",
+                                "type": "Sale",
+                                "title": "Ruposibangla de parlosia.",
+                                "address": "2381 Richards Avenue, Stockton, California",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                {
+                                "image": "2",
+                                "type": "Rent",
+                                "title": "Sinomen Studio Palace.",
+                                "address": "4658 Oakwood Avenue, New York",
+                                "price": "$255300",
+                                "date": "Added: 25 November, 2021 "
+                                },
+                                ])
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Properties End -->
+
+        <!-- Team Section Etart-->
+        <section class="team-section pb-[80px] lg:pb-[125px] overflow-hidden">
+            <div class="container">
+                <div class="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-x-[30px] mb-[-30px]">
+                    <div class="xl:pr-[20px] self-center mb-[30px] sm:col-span-3 lg:col-span-1 max-w-[500px]">
+                        <span class="text-secondary text-tiny capitalize inline-block mb-[15px]">Our Agents</span>
+                        <h2
+                            class="font-lora text-primary text-[24px] sm:text-[30px] leading-[1.277] xl:text-xl capitalize mb-[15px] font-medium">
+                            Here is our Experts<span class="text-secondary">.</span></h2>
+
+                        <p>Huge number propreties availabe
+                            here for buy, sell and Rent, you a 
+                           find here co-living property lots 
+                           to choose here and enjoy huge. </p>
+                        <a href="blog-grid.html" class="flex flex-wrap items-center text-secondary text-tiny mt-[20px]">View all
+                            Post
+                            <svg class="ml-[10px]" width="26" height="11" viewBox="0 0 26 11" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.0877 0.69303L24.2075 5.00849H0V5.99151H24.2075L20.0877 10.307L20.7493 11L26 5.5L20.7493 0L20.0877 0.69303Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+
+                    </div>
+                    <!-- single team start -->
+                    @@loop('team/index.html', [
+                    {
+                    "image": "1",
+                    "type": "Real Estate Broker",
+                    "title": "Amelia Margaret",
+                    },
+
+                    {
+                    "image": "2",
+                    "type": "Real Estate Agent",
+                    "title": "Stephen Kelvin",
+                    },
+                    {
+                    "image": "3",
+                    "type": "Real Estate Broker",
+                    "title": " Michael Richard",
+                    },
+                    ])
+
+                    <!-- single team end-->
+                </div>
+            </div>
+        </section>
+        <!-- Team Section End-->
+
+        <!-- News Letter section start -->
+        <section class="py-[80px] lg:p-[90px] bg-primary relative">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="col-span">
+                        @@include('news-letter/index-2.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Letter section End -->
+
+        <!-- Footer Start -->
+        <footer class="footer bg-[#EEEEEE] pt-[80px] lg:pt-[120px] pb-30 md:pb-[80px] lg:pb-[110px] font-normal bg-no-repeat"
+            style="background-image: url('assets/images/footer/pattern.png');">
+            <div class="container">
+                @@include('footer/index.html')
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <a id="scrollUp" class="w-12 h-12 rounded-full bg-primary text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up">
+
+            <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"/></svg>
+
+        </a>
+    </div>
+
+
+    @@include('scripts.html', {"page": "home", "plugins":
+    ["swiper-bundle.min","popper.min","jquery.magnific-popup.min","jquery.ajaxchimp.min","parallax.min","jquery.waypoints","jquery.counterup.min"]})
+
+</body>
+
+</html>
